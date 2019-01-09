@@ -1,0 +1,42 @@
+{
+  "name": "developmint/netlify-build-hook",
+  "description": "Trigger your Netlify build hooks with ease",
+  "keywords": [
+    "netlify",
+    "hook",
+    "build",
+    "webhook",
+    "buildhook"
+  ],
+  "type": "library",
+  "homepage": "https://github.com/developmint/netlify-build-hook",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Lichter",
+      "email": "alichter@developmint.de",
+      "homepage": "https://developmint.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Developmint\\NetlifyBuildHook\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Developmint\\NetlifyBuildHook\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
